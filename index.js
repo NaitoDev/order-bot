@@ -10,8 +10,7 @@ client.on('message', message => {
 	if (message.content.startsWith(prefix + 'order')) {
 	  var args = message.content.split(" ").slice(1).join(" ")
 	  if (!args) return message.channel.send("nothing aprove 🙃")
-		let orderChannel = message.guild.channels.cache.find(c => c.name 'اسم الروم'
-		);
+		  let orderChannel = message.guild.channels.cache.find(c => c.name == '');//اسم روم الطلبات
 		orderChannel.send(`<@&${orole}> New Order!`)
 		const embed = new Discord.MessageEmbed()
 			.setAuthor('orderd bye' + message.author.username)
